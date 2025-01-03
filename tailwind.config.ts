@@ -1,4 +1,17 @@
 import type { Config } from "tailwindcss";
+import plugin from "tailwindcss/plugin";
+import { default as TailwindCssAnimate } from "tailwindcss-animate";
+import type { PluginAPI } from "tailwindcss/types/config";
+
+const customUtilities = plugin(function ({ addUtilities }: PluginAPI) {
+  const newUtilities = {
+    ".container-1": {
+      "@apply px-6 md:px-24": {},
+    },
+  };
+
+  addUtilities(newUtilities);
+});
 
 export default {
   darkMode: ["class"],
@@ -59,5 +72,5 @@ export default {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [TailwindCssAnimate, customUtilities],
 } satisfies Config;
