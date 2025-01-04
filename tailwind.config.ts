@@ -9,7 +9,8 @@ const customUtilities = plugin(function ({ addUtilities }: PluginAPI) {
       "@apply px-6 md:px-24": {},
     },
     ".container-section": {
-      "@apply container-1 mt-28 md:mt-40": {},
+      "@apply container-1 mt-28 md:mt-40 flex flex-col items-center justify-center":
+        {},
     },
     ".section-title": {
       "@apply font-bold text-2xl md:text-4xl text-center": {},
