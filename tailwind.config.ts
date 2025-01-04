@@ -8,6 +8,9 @@ const customUtilities = plugin(function ({ addUtilities }: PluginAPI) {
     ".container-1": {
       "@apply px-6 md:px-24": {},
     },
+    ".container-section": {
+      "@apply container-1 mt-28 md:mt-40": {},
+    },
     ".section-title": {
       "@apply font-bold text-2xl md:text-4xl text-center": {},
     },
