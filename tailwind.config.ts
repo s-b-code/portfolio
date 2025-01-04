@@ -22,6 +22,9 @@ export default {
   ],
   theme: {
     extend: {
+      fontSize: {
+        "2.5xl": "1.75rem",
+      },
       colors: {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
