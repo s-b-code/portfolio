@@ -11,18 +11,16 @@ function Navbar() {
           <Button className="md:hidden" variant={"ghost"} size={"icon"}>
             <Image src="/menu.svg" width={24} height={24} alt="logo" />
           </Button>
-          <div className="hidden md:flex flex-1 items-center justify-center">
-            <nav className="flex items-center justify-between w-[653px]">
-              {SectionData.all.map((section) => (
-                <div
-                  className="text-xl font-medium tracking-wider text-dark-hover"
-                  key={section.link}
-                >
-                  {section.name}
-                </div>
-              ))}
-            </nav>
-          </div>
+          <nav className="hidden md:flex flex-1 items-center justify-center space-x-16">
+            {SectionData.all.map((section) => (
+              <div
+                className="text-xl font-medium tracking-wider text-dark-hover"
+                key={section.link}
+              >
+                {section.name}
+              </div>
+            ))}
+          </nav>
           <Button className="font-medium text-sm md:text-base md:font-bold tracking-wider py-2 px-4 md:py-3 md:px-10">
             Hire Me
           </Button>
