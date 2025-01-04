@@ -21,7 +21,7 @@ function Navbar() {
               </div>
             ))}
           </nav>
-          <Button className="font-medium text-sm md:text-base md:font-bold tracking-wider">
+          <Button className="font-medium text-sm md:text-base md:font-bold tracking-wider py-2 px-4 md:py-3 md:px-10">
             Hire Me
           </Button>
         </div>
