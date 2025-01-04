@@ -8,6 +8,13 @@ const customUtilities = plugin(function ({ addUtilities }: PluginAPI) {
     ".container-1": {
       "@apply px-6 md:px-24": {},
     },
+    ".section-title": {
+      "@apply font-bold text-2xl md:text-4xl text-center": {},
+    },
+    ".section-description": {
+      "@apply mt-4 md:mt-5 font-medium text-dark-active text-base md:text-xl text-center":
+        {},
+    },
   };
 
   addUtilities(newUtilities);
@@ -67,8 +74,12 @@ export default {
           "5": "hsl(var(--chart-5))",
         },
         "dark-hover": "#959595",
+        "dark-active": "#707070",
+        darker: "#575757",
       },
       borderRadius: {
+        xxl: "calc(var(--radius) * 3)",
+        xl: "calc(var(--radius) * 2)",
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
