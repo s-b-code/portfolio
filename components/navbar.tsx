@@ -21,7 +21,9 @@ function Navbar() {
               </div>
             ))}
           </nav>
-          <Button className="tracking-wider">Hire Me</Button>
+          <Button className="font-medium text-sm md:text-base md:font-bold tracking-wider">
+            Hire Me
+          </Button>
         </div>
         <div className="h-10 w-full bg-gradient-to-b from-background via-background/80 to-transparent"></div>
       </header>
